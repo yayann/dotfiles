@@ -93,6 +93,7 @@ alias art="php artisan"
 alias artisan="php artisan"
 alias tinker="php artisan tinker"
 alias envoy="php vendor/bin/envoy"
+#alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 
 # Herd injected PHP 8.1 configuration.
@@ -101,3 +102,17 @@ export HERD_PHP_81_INI_SCAN_DIR="/Users/labouy/Library/Application Support/Herd/
 
 # Herd injected PHP 7.4 configuration.
 export HERD_PHP_74_INI_SCAN_DIR="/Users/labouy/Library/Application Support/Herd/config/php/74/"
+#export PATH="/opt/homebrew/opt/php@8.4/bin:$PATH"
+#export PATH="/opt/homebrew/opt/php@8.4/sbin:$PATH"
+
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/labouy/Library/Application Support/Herd/config/php/84/"
+
+# bun completions
+[ -s "/Users/labouy/.bun/_bun" ] && source "/Users/labouy/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export DYLD_LIBRARY_PATH="/opt/homebrew/lib:$DYLD_LIBRARY_PATH"
